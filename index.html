@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Distribution Calculator 🧮</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="calculator ">
+            <form action="" class="calc_1">
+                
+                <div class="buttons-container">
+
+                    <div class="display">
+                        <input type="text" name="display" placeholder="Enter Your Percentage% " id="input_box">
+                    </div>
+
+                    <div>
+                        <input type="button" value="AC" onclick="display.value = '' ">
+                        <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1) ">
+                        <input type="button" value="." onclick="display.value += '.' ">
+                        <input type="button" value="%" onclick="display.value += '%' ">
+                    </div>
+                    
+                    <div>
+                        <input type="button" value="1" onclick="display.value += '1' ">
+                        <input type="button" value="2" onclick="display.value += '2' ">
+                        <input type="button" value="3" onclick="display.value += '3' ">
+                        <input type="button" value="4" onclick="display.value += '4' ">
+                    </div>
+
+                    <div>
+                        <input type="button" value="5" onclick="display.value += '5' ">
+                        <input type="button" value="6" onclick="display.value += '6' ">
+                        <input type="button" value="7" onclick="display.value += '7' ">
+                        <input type="button" value="8" onclick="display.value += '8' ">
+                    </div>
+
+                    <div>
+                        <input type="button" value="9"onclick="display.value += '9' ">
+                        <input type="button" value="0"onclick="display.value += '0' ">
+                        <input type="button" value="SUBMIT" class="equal" id="submit">
+                    </div>
+
+                </div>
+            </form>
+
+            <div class="calculator-2">
+                <form action="">
+                    
+                    <div class="buttons-container">
+
+                        <div class="display" >
+                            <input type="number" name="display" placeholder="Enter Total Marks " id="total_marks">
+                        </div>
+
+                        <div class="display" >
+                            <input type="number" name="display" placeholder="Enter Obtain Marks" id="Obtain_marks">
+                        </div>
+
+                        <div class="display">
+                            <input type="text" name="display" placeholder="0.00 %" id="percentage_result" readonly>
+                        </div>
+
+                    </div>
+
+                    <div class="percentage_button">
+                        <button type="button" id="percent_submit" style="color: rgba(132, 2, 144, 0.612);">SUBMIT</button>
+                    </div>
+                    <br>
+
+                </form>
+            </div>
+
+            <div class="options">
+                <button type="button" class="active" id="findGradeButton">Find Your Grade <i class='bx bxs-bar-chart-alt-2'></i></button>
+                <br>
+                <button type="button" id="findPercentageButton">Find Your Percentage <i class='bx bxs-circle-three-quarter'></i></button>
+            </div>
+        </div>
+
+        </div>
+
+        <script src="index.mjs"></script>
+
+</body>
+</html>
