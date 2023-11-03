@@ -10,9 +10,15 @@ function findGrade(){
             percentage.value="Grade = B"
         }else if (outputBox <= 70) {
             percentage.value="Grade = A";
-        }else if (outputBox <= 80 ||outputBox <= 100) {
+        }else if (outputBox <= 80 ) {
             percentage.value="Grade = A+";
-        }else if (outputBox > 100 ) {
+            
+        }
+        else if (outputBox <= 100) {
+            percentage.value="Grade = A+";
+            
+        }
+        else if (outputBox > 100 ) {
             percentage.value="Wrong Value!!!";
         } else {
             percentage.value="Wrong Value!!!"
